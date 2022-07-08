@@ -11,28 +11,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img src="./img/LOGO.png" alt="logo" width="69" height="20">
+                <!-- <button class="button is-secondary">Curriculum</button> -->
+                <nav class="menu" aria-label="main-navigation">
+                    <ul>
+                        <li>
+                            <a class="is-active" href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="button">Curriculum</button>
+            </div>
+        </div>
+    </header>
     <div class="wrapper">
-        <header class="header">
-            <img src="./img/LOGO.png" alt="logo" width="69" height="20">
-            <!-- <button class="button is-secondary">Curriculum</button> -->
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a class="is-active" href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button">Curriculum</button>
-        </header>
         
     
-        <section class="hero" id="main">
+        <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
                 <img src="./img/diegopicportfolio.jpg" width="328" height="330" alt="Foto de Diego Jiménez">
             </div>
@@ -44,7 +48,7 @@
                 <p>
                     Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.
                 </p>
-                <div class="hero-social">
+                <div class="social">
                     <a class="button-icon" href="tel:5535543897"><img src="./icons/icon-phone.png"></a>
                     <a class="button-icon" href="email:diegogo_go@hotmail.com"><img src="./icons/icon-important_mail.png"></a>
                     <a class="button-icon" href="https://www.instagram.com/gogo.jimenez/"><img src="./icons/icon-instagram.png"></a>
@@ -53,15 +57,79 @@
                 <a href="" class="button">Descargar Curriculum</a>
             </div>
         </section>
-        <div class="testimony">
-            <div class="testimony-image">
+        <div class="project" id="project">
+            <div class="project-image">
                 <img src="./img/proyect1.png">
             </div>
-            <div class="testimony-description">
-
+            <div class="project-description">
+                <a target="_blank" class="title" href="https://leonidasesteban.com">Leonidasesteban.com</a>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
+                <a target="_blank" class="button is-secondary" href="https://github.com/Gogo677/portafolio">Ver Código</a>
+                <a target="_blank" class="button" href="https://github.com/Gogo677/portafolio">Ver Proyecto</a>
             </div>
         </div>
-    </div>
 
+        <div class="project">
+            <div class="project-image">
+                <img src="./img/proyect2.png">
+            </div>
+            <div class="project-description">
+                <a target="_blank" class="title" href="https://leonidasesteban.com">Leonidasesteban.com</a>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
+                <a target="_blank" class="button is-secondary" href="https://github.com/Gogo677/portafolio">Ver Código</a>
+                <a target="_blank" class="button" href="https://github.com/Gogo677/portafolio">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image">
+                <img src="./img/proyect3.png">
+            </div>
+            <div class="project-description">
+                <a target="_blank" class="title" href="https://leonidasesteban.com">Leonidasesteban.com</a>
+                <p>Accede a más de 120 proyectos que te ayudarán a mejorar tus habilidades como desarrollador Front-End.</p>
+                <a target="_blank" class="button is-secondary" href="https://github.com/Gogo677/portafolio">Ver Código</a>
+                <a target="_blank" class="button" href="https://github.com/Gogo677/portafolio">Ver Proyecto</a>
+            </div>
+        </div>
+        <form id="contact"action="" method="GET" class="form">
+            <div class="form-content">
+                <h2 class="title">Hablemos</h2>
+                <p>Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.</p>
+                <label for="form-name">Nombre Completo
+    
+                    <input required name="name" id="form-name" type="text" placeholder="Juan">
+                </label>
+                <label for="form-name">Correo electrónico
+    
+                    <input  required name="email" id="form-email" type="email" placeholder="juan@gmail.com">
+                </label>
+                <label for="form-email">Mensaje
+    
+                    <textarea  required name="message" id="form-message" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                </label>
+                <button class="button" type="submit">Enviar mensaje</button>
+            </div>
+        </form>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./img/LOGO.png" alt="logo" width="69" height="20">
+                </div>
+                <div class="social">
+                    <a class="button-icon" href="tel:5535543897"><img src="./icons/icon-phone.png"></a>
+                    <a class="button-icon" href="email:diegogo_go@hotmail.com"><img src="./icons/icon-important_mail.png"></a>
+                    <a class="button-icon" href="https://www.instagram.com/gogo.jimenez/"><img src="./icons/icon-instagram.png"></a>
+                    <a class="button-icon" href="https://twitter.com/GOGITOXD"><img src="./icons/icon-twitter_squared.png"></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Diego Jimenez </p>
+                    <p>Copyright 2021 - Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
 </body>
 </html>
