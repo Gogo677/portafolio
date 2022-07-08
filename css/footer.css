@@ -14,7 +14,6 @@
 
 @media screen and (min-width: 768px) {
     .footer-content {
-        border: 1px solid red;
         justify-content: space-between;
         display: flex;
         align-items: center;
